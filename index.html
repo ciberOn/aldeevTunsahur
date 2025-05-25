@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <div class="logo">
+                <h1 class="title">Aldeev</h1>
+                <div class="img"></div>
+            </div>
+            <ul class="menu">
+                <li class="menu__item">Main</li>
+                <li class="menu__item">Game</li>
+                <li class="menu__item">Skills</li>
+                <li class="menu__item">About</li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container">
+            <section class="contacts__section">
+                <h2 class="title__contacts">My contacts</h2>
+                <p class="paragraph__contacts">you can write me on my
+                    <span><b>mail</b>:<i>mail@mail.com</i></span><br>
+                    <span><b>phone</b>:<i>8-800-555-35-55</i></span><br>
+                    <span><b>telegram</b>:<i>@myTg</i></span><br>
+                </p>
+            </section>
+            <section class="section__game">
+                <h3 class="title__game">Play with me</h3>
+                <button class="btn" id="btn">Play</button>
+                <script>
+                    const btn = document.getElementById("btn")
+                    btn.addEventListener("click",()=>{
+                        btn.classList.add("btn__animation")
+                        btn.innerText = Math.floor(Math.random() * 100)
+                    })
+                </script>
+            </section>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+</body>
+
+</html>
