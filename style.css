@@ -94,3 +94,15 @@ body {
     padding: 40px;
 }
 
+.link__joke{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-decoration: none;
+    color: black;
+}
+
+.link__joke:hover{
+    transform: translate(400%,-300%);
+    transition: 300ms;
+}
